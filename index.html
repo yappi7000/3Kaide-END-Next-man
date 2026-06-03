@@ -1,82 +1,228 @@
-<div style="font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; max-width: 500px; margin: 0 auto; padding: 20px; background-color: #ffffff; color: #333333; line-height: 1.8; border: 1px solid #e0e0e0; border-radius: 8px;">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>『3回で終わる男、続く男』公式案内</title>
+<!-- ★明朝体（Noto Serif JP）の最高品質フォントを読み込み -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue:      #0066cc;
+    --blue-dark: #0044cc;
+    --blue-lt:   #e6f2ff;
+    --blue-bdr:  #b3d1ff;
+    --text:      #222222; /* 明朝体が一番美しく引き締まって見える漆黒 */
+    --muted:     #555555;
+    --bg:        #f4f6f9;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    /* ★全体のフォントを美しく知的な明朝体に指定 */
+    font-family: 'Noto Serif JP', Georgia, 'Times New Roman', 'Hiragino Mincho ProN', serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.9; /* 明朝体が最も美しく読める少し広めの行間 */
+    letter-spacing: 0.03em; /* 文芸書のような心地よい文字間隔 */
+  }
+  .wrapper {
+    max-width: 760px; /* PC・スマホの両方で最も美しい横幅 */
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+  }
+  .main-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 50px 40px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  }
 
-  <!-- タイトルエリア -->
-  <div style="text-align: center; background-color: #e6f2ff; border: 2px solid #0066cc; border-left: 8px solid #0066cc; padding: 20px; margin-bottom: 25px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,102,204,0.1);">
-    <span style="font-size: 21px; font-weight: 900; color: #0044cc; display: block; margin-bottom: 8px; letter-spacing: 0.5px;">📖 『3回で終わる男、続く男』</span>
-    <span style="font-size: 14px; color: #333333; font-weight: bold; display: block; letter-spacing: 0.5px;">〜大人の女性は怒らない。ただ静かに去る〜</span>
-  </div>
+  /* ===== HEADER ===== */
+  .title-box {
+    text-align: center;
+    background-color: var(--blue-lt);
+    border: 2px solid var(--blue);
+    border-left: 8px solid var(--blue);
+    padding: 26px;
+    margin-bottom: 40px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,102,204,0.08);
+  }
+  .main-title {
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--blue-dark);
+    display: block;
+    margin-bottom: 10px;
+  }
+  .sub-title {
+    font-size: 15px;
+    color: #333333;
+    font-weight: 700;
+    display: block;
+  }
 
-  <!-- 本文エリア -->
-  <p style="font-size: 15px; margin-bottom: 20px;">
-    ☕ <b>やや</b>です。<br>
-    リッチメニューをタップしていただき、ありがとうございます。
-  </p>
+  /* ===== TEXT STYLES ===== */
+  p {
+    font-size: 16px;
+    margin-bottom: 26px;
+  }
+  b, strong {
+    font-weight: 700;
+    background: linear-gradient(transparent 70%, #e6f2ff 0%); /* 派手すぎない大人の青マーカー線 */
+  }
+  .highlight-blue {
+    color: var(--blue-dark);
+    font-weight: 700;
+  }
 
-  <p style="font-size: 15px; background-color: #f7f9fc; padding: 15px; border-radius: 6px; margin-bottom: 20px; border-left: 3px solid #0066cc; font-weight: bold; color: #0044cc;">
-    「どれだけ良い雰囲気でスタートしても、なぜか3回目のデートが終わる頃には連絡が途絶えてしまう…」
-  </p>
+  /* ===== BLOCKQUOTE ===== */
+  .quote-box {
+    background-color: #f8f1eb; /* ほんのり温かみのある大人の読書空間を演出する背景色 */
+    padding: 22px 24px;
+    border-radius: 6px;
+    margin-bottom: 26px;
+    border-left: 4px solid #c8a27c; /* 渋みのあるマスタード・ゴールド */
+    font-weight: 500;
+    color: #4a3b32;
+  }
 
-  <p style="font-size: 15px; margin-bottom: 20px;">
-    喧嘩をしたわけでも、嫌われるような大失敗をしたわけでもない。なのに、気づけば「また連絡するね」という乾いた一言を最後に、静かに自然消滅していく。👥💥
-  </p>
+  /* ===== SUB HEADER ===== */
+  .sub-header {
+    font-size: 18px;
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue-bdr);
+    padding-bottom: 8px;
+    margin: 45px 0 24px;
+    font-weight: 700;
+  }
 
-  <p style="font-size: 15px; margin-bottom: 20px;">
-    もしあなたにそんな経験があるなら、ここで<span style="color: #0044cc; font-weight: bold;">残酷なまでの厳しい現実</span>をお伝えしなければなりません。
-  </p>
+  /* ===== DASHED BOX ===== */
+  .dashed-box {
+    background-color: #ffffff;
+    border: 2px dashed var(--blue);
+    padding: 24px;
+    border-radius: 6px;
+    margin-bottom: 35px;
+  }
 
-  <p style="font-size: 15px; margin-bottom: 20px;">
-    自立した大人の女性は、男に対して感情を剥き出しにして怒ることはありません。🙅‍♀️<br>
-    責めないし、不満や説教も一切口にしないのです。
-  </p>
+  /* ===== BUTTON ===== */
+  .btn-container {
+    text-align: center;
+    margin: 45px 0;
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: var(--blue);
+    color: #ffffff;
+    font-size: 17.5px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 18px 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0,102,204,0.3);
+    transition: all 0.3s ease;
+    width: 90%;
+    max-width: 520px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    /* ボタン内だけはパッと見やすさを優先してゴシック体を少し混ぜる */
+    font-family: 'Noto Sans JP', sans-serif; 
+  }
+  .cta-button:hover {
+    background-color: var(--blue-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0,102,204,0.4);
+  }
+  .btn-sub {
+    font-size: 11.5px;
+    font-weight: normal;
+    display: block;
+    opacity: 0.9;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+  }
 
-  <p style="font-size: 15px; margin-bottom: 25px;">
-    彼女たちはデートのたび、あなたの見えないところで少しずつ脳内のスコアボードから<b>「減点」</b>を引き算しています。そしてある日ついに限界を超えたから、何も言わずに、ただ静かに去っていったのです。📉💔
-  </p>
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 576px) {
+    .wrapper { padding: 20px 10px 40px; }
+    .main-card { padding: 30px 18px; }
+    .main-title { font-size: 21px; }
+    .sub-title { font-size: 13.5px; }
+    p { font-size: 15.5px; }
+    .cta-button { width: 100%; font-size: 16px; }
+  }
+</style>
+</head>
+<body>
 
-  <!-- 小見出し -->
-  <h3 style="font-size: 16px; color: #0055cc; border-bottom: 2px solid #b3d1ff; padding-bottom: 5px; margin-bottom: 15px;">⏳ 私はその答えに気づくまでに、20年を無駄にしました</h3>
+<div class="wrapper">
+  <div class="main-card">
 
-  <p style="font-size: 15px; margin-bottom: 20px;">
-    「相性が悪かっただけ」「縁やタイミングが合わなかったんだろう」<br>
-    そうやって自分に都合のいい言い訳を続け、全く同じ失敗のループを20年以上も繰り返してきたのです。😔🔂
-  </p>
+    <!-- タイトルエリア -->
+    <div class="title-box">
+      <span class="main-title">📖 『3回で終わる男、続く男』</span>
+      <span class="sub-title">〜大人の女性は怒らない。ただ静かに去る〜</span>
+    </div>
 
-  <p style="font-size: 15px; margin-bottom: 20px;">
-    あなたには、私と同じ過ちを犯し、<b>男としての貴重な時間とエネルギーをドブに捨ててほしくない。</b>
-  </p>
+    <!-- 本文エリア -->
+    <p>☕ <b>やや</b>です。<br>リッチメニューをタップしていただき、ありがとうございます。</p>
 
-  <p style="font-size: 15px; margin-bottom: 25px;">
-    その強い思いだけで、私の20年分の遠回りと、血の滲むような失敗から得た<b>「答えのすべて」</b>を1冊のnoteに包み隠さず凝縮しました。✍️🔥
-  </p>
+    <div class="quote-box">
+      「どれだけ良い雰囲気でスタートしても、なぜか3回目のデートが終わる頃には連絡が途絶えてしまう…」
+    </div>
 
-  <!-- 強調枠 -->
-  <div style="background-color: #ffffff; border: 2px dashed #0066cc; padding: 15px; border-radius: 8px; margin-bottom: 25px; text-align: left;">
-    <p style="font-size: 15px; margin: 0; font-weight: bold; color: #333333; line-height: 1.8;">
-      💡 <b>このnoteは、女性を騙すための安っぽい恋愛攻略本ではありません。</b><br>
-      大人の女性に信頼され、<span style="color: #0044cc;">40代・50代から本気で人生を回収するための「選ばれる男」の教科書</span>です。✨👑
+    <p>喧嘩をしたわけでも、嫌われるような大失敗をしたわけでもない。なのに、気づけば「また連絡するね」という乾いた一言を最後に、静かに自然消滅していく。👥💥</p>
+
+    <p>もしあなたにそんな経験があるなら、ここで<span class="highlight-blue">残酷なまでの厳しい現実</span>をお伝えしなければなりません。</p>
+
+    <p>自立した大人の女性は、男に対して感情を剥き出しにして怒ることはありません。🙅‍♀️<br>責めないし、不満や説教も一切口にしないのです。</p>
+
+    <p>彼女たちはデートのたび、あなたの見えないところで少しずつ脳内のスコアボードから<b>「減点」</b>を引き算しています。そしてある日ついに限界を超えたから、何も言わずに、ただ静かに去っていったのです。📉💔</p>
+
+    <!-- 小見出し -->
+    <h3 class="sub-header">⏳ 私はその答えに気づくまでに、20年を無駄にしました</h3>
+
+    <p>「相性が悪かっただけ」「縁やタイミングが合わなかったんだろう」<br>そうやって自分に都合のいい言い訳を続け、全く同じ失敗のループを20年以上も繰り返してきたのです。😔🔂</p>
+
+    <p>あなたには、私と同じ過ちを犯し、<b>男としての貴重な時間とエネルギーをドブに捨ててほしくない。</b></p>
+
+    <p>その強い思いだけで、私の20年分の遠回りと、血の滲むような失敗から得た<b>「答えのすべて」</b>を1冊のnoteに包み隠さず凝縮しました。✍️🔥</p>
+
+    <!-- 強調枠 -->
+    <div class="dashed-box">
+      <p style="margin: 0; font-weight: bold; color: #333333; line-height: 1.8;">
+        💡 <b>このnoteは、女性を騙すための安っぽい恋愛攻略本ではありません。</b><br>
+        大人の女性に信頼され、<span class="highlight-blue">40代・50代から本気で人生を回収するための「選ばれる男」の教科書</span>です。✨👑
+      </p>
+    </div>
+
+    <p style="text-align: center; font-weight: bold;">
+      私は女性が離れていく本当の理由を知るまでに20年かかりました。<br>
+      底知れぬ後悔を経て、あなたは<span style="color: #0044cc; font-size: 17px; background: linear-gradient(transparent 60%, #cce0ff 0%); font-weight: bold;">【今日、この瞬間】</span>にそれを知ることができます。⚡💡
     </p>
-  </div>
 
-  <p style="font-size: 15px; margin-bottom: 25px; text-align: center; font-weight: bold;">
-    私は女性が離れていく本当の理由を知るまでに20年かかりました。<br>
-    でも、あなたは<span style="color: #0044cc; font-size: 17px; background: linear-gradient(transparent 60%, #cce0ff 0%);">【今日、この瞬間】</span>にそれを知ることができます。⚡💡
-  </p>
+    <p style="text-align: center; font-weight: 500;">
+      もう二度と、あの切ない自然消滅の苦しみを繰り返したくないなら、下の青いボタンをタップして、私の20年の結晶を受け取ってください。👇
+    </p>
 
-  <p style="font-size: 15px; margin-bottom: 20px; text-align: center; font-weight: 500;">
-    もう二度と、あの切ない自然消滅の苦しみを繰り返したくないなら、下の青いボタンをタップして、私の20年の結晶を受け取ってください。👇
-  </p>
+    <!-- タップ導線ボタン -->
+    <div class="btn-container">
+      <a href="https://note.com/deep_acacia8369/n/nf83206cef7f1" target="_blank" class="cta-button">
+        <span class="btn-sub">＼ここをタップすると公式noteが開きます／</span>
+        📖 本編の続きを今すぐ読む（2,980円）
+      </a>
+    </div>
 
-  <!-- タップ導線ボタン -->
-  <div style="text-align: center; margin-bottom: 30px;">
-    <a href="https://note.com/deep_acacia8369/n/nf83206cef7f1" target="_blank" style="display: inline-block; background-color: #0066cc; color: #ffffff; font-size: 16px; font-weight: bold; text-decoration: none; padding: 16px 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,102,204,0.3); transition: all 0.3s ease; width: 90%; box-sizing: border-box; line-height: 1.5;">
-      <span style="font-size: 12px; font-weight: normal; display: block; opacity: 0.9; margin-bottom: 5px; letter-spacing: 0.5px;">＼ここをタップすると公式noteが開きます／</span>
-      📖 本編の続きを今すぐ読む（2,980円）
-    </a>
-  </div>
+    <!-- フッター -->
+    <p style="text-align: center; color: var(--muted); font-weight: bold; margin: 0;">
+      あなたのご参加を、静かにお待ちしています。🤝☕
+    </p>
 
-  <!-- フッター -->
-  <p style="font-size: 15px; text-align: center; color: #555555; font-weight: bold; margin: 0;">
-    あなたのご参加を、静かにお待ちしています。🤝☕
-  </p>
+  </div><!-- /main-card -->
+</div><!-- /wrapper -->
 
-</div>
+</body>
+</html>
